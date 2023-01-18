@@ -33,7 +33,7 @@ body{
   /* opacity: 20%; */
 }
 
-.container2 p{
+.container2heading{
   display: block;
   width: 25rem;
   margin: auto;
@@ -77,6 +77,7 @@ nav {
     color: #ffa800;
     font-size: 1.5em;
     margin-right: auto;
+    margin-top: 3rem;
   }
   nav ul {
     list-style: none;
@@ -148,6 +149,8 @@ nav {
 
 
 .card-container {
+  margin-left: 4rem;
+  margin-right: 4rem;
   display: flex;
   justify-content: space-evenly;
 }
@@ -157,9 +160,24 @@ nav {
   overflow: hidden;
   margin: 10px;
   flex: 1;
+  background-color: #383838;
 }
 
 .card img {
   width: 100%;
+}
+.cardheading {
+  width: 100%;
+  font-size: 2.5em;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.cardtxt{
+  padding-left: 2rem;
+  padding-right: 2rem;
+  text-align: justify;
+  padding-bottom: 2rem;
 }
 
