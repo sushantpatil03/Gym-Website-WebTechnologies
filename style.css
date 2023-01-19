@@ -13,6 +13,10 @@
   src: url("fonts/LEMONMILK-BoldItalic.otf");
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -78,19 +82,6 @@ body{
   /* margin-top: 5rem; */
 }
 
-  
-  footer {
-    background-color: #444444;
-    padding: 10px;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
-  
-  footer p {
-    margin: 0;
-  }
   
 /* Old CSS */
 
