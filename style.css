@@ -1,7 +1,17 @@
 @font-face {
   font-family: Molde-semi;
-  src: url("Molde-SemiCondensed-SemiboldItalic.ttf");
+  src: url("fonts/Molde-SemiCondensed-SemiboldItalic.ttf");
   }
+
+@font-face {
+  font-family: font2;
+  src: url("fonts/font-2.otf");
+}
+
+@font-face {
+  font-family: LEMONMILK-BoldItalic;
+  src: url("fonts/LEMONMILK-BoldItalic.otf");
+}
 
 *{
     padding: 0;
@@ -10,7 +20,8 @@
 
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #383838;
+    background-color: #564646;
+    /* background-color: #383838; */
     /* background: url('gym-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover; */
@@ -18,7 +29,7 @@ body{
 }
 
 .container1{
-  background: url('gym-bg.jpg');
+  background: url('img/gym-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   height: 50rem;
@@ -26,19 +37,43 @@ body{
 }
 
 .container2{
-  background: url('gym-bg2.jpg');
+  background: url('img/gym-bg2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 50rem;
+  height: 60rem;
   /* opacity: 20%; */
+}
+
+.container3{
+  background: url('img/join-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60rem;
 }
 
 .container2heading{
   display: block;
-  width: 25rem;
+  width: 41rem;
   margin: auto;
-  font-size: 4em;
+  margin-bottom: 1rem;
+  font-size: 5em;
   padding-top: 4rem;
+  font-family: LEMONMILK-BoldItalic;
+  /* color: #E1193E; */
+  color: white;
+  /* margin-top: 5rem; */
+}
+
+.container3heading{
+  display: block;
+  width: 41rem;
+  margin: auto;
+  margin-bottom: 1rem;
+  font-size: 5em;
+  padding-top: 4rem;
+  font-family: LEMONMILK-BoldItalic;
+  /* color: #E1193E; */
+  color: white;
   /* margin-top: 5rem; */
 }
 
@@ -97,6 +132,7 @@ nav {
   
 .heading{
   margin-left: 10rem;
+  margin-top: 10rem;
 }
 
 /* .gym-button {
@@ -153,6 +189,7 @@ nav {
   margin-right: 4rem;
   display: flex;
   justify-content: space-evenly;
+  margin-bottom: 2rem;
 }
 
 .card {
@@ -178,6 +215,6 @@ nav {
   padding-left: 2rem;
   padding-right: 2rem;
   text-align: justify;
-  padding-bottom: 2rem;
+  padding-bottom: 0.5rem;
 }
 
