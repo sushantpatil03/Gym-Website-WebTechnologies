@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>Practical 1</title>
 </head>
 <body>
@@ -23,7 +24,7 @@
       <div class="heading">
         <p class="p-fitness">YOU ONLY FAIL, WHEN YOU STOP TRYING</p>
         <p class="sub-headline">Its simple, Train Insane or Be the Same!</p>
-        <button class="gym-button">JOIN NOW →</button>
+        <a href="#join-form"><button class="gym-button">JOIN NOW →</button></a>
       </div>
   </div>
 
@@ -35,25 +36,38 @@
         <img src="img/img-card1.jpg" alt="Card Image">
         <p class="cardheading">Professional Trainers</p>
         <p class="cardtxt">A professional gym trainer is a fitness expert who designs and implements workout plans tailored to clients' specific goals and needs. They provide guidance and support throughout the fitness journey, helping individuals reach their full potential and achieve optimal health and wellness. Only a perfect trainer can teach you to work smartly.</p>
-        <button class="gym-button" style="margin-left: 9.5rem; margin-bottom: 1rem;">JOIN NOW →</button>
+        <a href="#join-form"><button class="gym-button" style="margin-left: 9.5rem; margin-bottom: 1rem;">JOIN NOW →</button></a>
       </div>
       <div class="card">
         <img src="img/img-card2.jpg" alt="Card Image">
         <p class="cardheading">Complete Equipments</p>
         <p class="cardtxt">Our gym equipment refers to the high-quality, durable and advanced fitness equipment used by fitness professionals and enthusiasts. This includes cardio machines such as treadmills and exercise bikes, strength training equipment like weight machines and dumbbells, as well as specialized equipment for functional training, powerlifting and more.</p>
-        <button class="gym-button" style="margin-left: 9.5rem; margin-bottom: 1rem;">JOIN NOW →</button>
+        <a href="#join-form"><button class="gym-button" style="margin-left: 9.5rem; margin-bottom: 1rem;">JOIN NOW →</button></a>
       </div>
       <div class="card">
         <img src="img/img-card3.jpg" alt="Card Image">
         <p class="cardheading">Personalized Diet</p>
         <p class="cardtxt">Our gym equipment refers to the high-quality, durable and advanced fitness equipment used by fitness professionals and enthusiasts. This includes cardio machines such as treadmills and exercise bikes, strength training equipment like weight machines and dumbbells, as well as specialized equipment for functional training, powerlifting and more.</p>
-        <button class="gym-button" style="margin-left: 9.5rem; margin-bottom: 1rem;">JOIN NOW →</button>
+        <a href="#join-form"><button class="gym-button" style="margin-left: 9.5rem; margin-bottom: 1rem;">JOIN NOW →</button></a>
       </div>
     </div>
   </div>  
   
   <div class="container3">
     <div class="container3heading">It's NOW or NEVER!</div>
+    <form id="join-form" onsubmit="return validate()">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your good name"><br>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your BEST email"><br>
+      
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" placeholder="Enter your contact number"><br>
+      
+      <input type="submit" value="JOIN ME NOW!">
+    </form>
+    
   </div>
 
       <!-- <form method="get" action="">

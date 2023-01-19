@@ -37,7 +37,7 @@ body{
 }
 
 .container2{
-  background: url('img/gym-bg2.jpg');
+  background: url('img/gym-bg-3.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   height: 60rem;
@@ -45,19 +45,19 @@ body{
 }
 
 .container3{
-  background: url('img/join-bg.jpg');
+  background: url('img/image1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 60rem;
+  height: 50rem;
 }
 
 .container2heading{
   display: block;
-  width: 41rem;
+  width: 37rem;
   margin: auto;
   margin-bottom: 1rem;
-  font-size: 5em;
-  padding-top: 4rem;
+  font-size: 4.5em;
+  padding-top: 3rem;
   font-family: LEMONMILK-BoldItalic;
   /* color: #E1193E; */
   color: white;
@@ -66,10 +66,11 @@ body{
 
 .container3heading{
   display: block;
-  width: 41rem;
+  width: 45rem;
   margin: auto;
   margin-bottom: 1rem;
-  font-size: 5em;
+  margin-left: 10rem;
+  font-size: 4em;
   padding-top: 4rem;
   font-family: LEMONMILK-BoldItalic;
   /* color: #E1193E; */
@@ -218,3 +219,46 @@ nav {
   padding-bottom: 0.5rem;
 }
 
+/* Form styling */
+form {
+  width: 37.5rem;
+  padding: 20px;
+  /* margin: 0 auto; */
+  margin-left: 12rem;
+  margin-top: 6.5rem;
+  /* background-color: #f7f7f7; */
+  background-color: transparent;
+  border: 1px solid #ccc;
+  border-radius: 2rem;
+  color: #ffffff;
+}
+
+/* Label styling */
+label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* Input field styling */
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Submit button styling */
+input[type="submit"] {
+  width: 100%;
+  /* background-color: #4CAF50; */
+  background-color: #E1193E;
+  color: white;
+  padding: 14px 20px;
+  margin-bottom: 20px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Open Sans';
+}
