@@ -6,6 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(function(){
+        
+        $("#w-name").hide()
+        $("#w-mail").hide()
+        $("#w-number").hide()
+
+        $(".form-warnings").css({
+          "color":"red"
+        })
+
+        $("#join-form").submit(function(){
+          var name = $("#name").val()
+          var email = $("#email").val()
+          var number = $("#phone").val()
+
+          var error = false
+          if(name.length == 0 || !name){
+            $("#w-name").show();
+            error = true;
+          }
+          if(email.length == 0 || !email){
+            $("#w-mail").show();
+            error = true;
+          }
+          if(number.length == 0 || !number){
+            $("#w-number").show();
+            error = true;
+          }
+
+          if(!validateEmail(email)) { 
+              $("#w-mail").val("Please enter a valid email!");
+              $("#w-mail").show();
+              error = true
+          }
+
+          if(error){
+            return false
+          }
+
+        });
+
+      })
+    </script>
     <title>Practical 1</title>
 </head>
 <body>
@@ -54,17 +99,20 @@
   
   <div class="container3">
     <div class="container3heading">It's NOW or NEVER!</div>
-    <form id="join-form" onsubmit="return validate()">
+    <form id="join-form" action="index.html" onsubmit="return validate()">
       <label for="name">Name:</label>
-      <input type="text" id="name" name="name" placeholder="Enter your good name"><br>
+      <input type="text" id="name" name="name" placeholder="Enter your good name">
+      <p id="w-name" class="form-warnings">Please enter your name</p><br>
       
       <label for="email">Email:</label>
-      <input type="email" id="email" name="email" placeholder="Enter your BEST email"><br>
+      <input type="email" id="email" name="email" placeholder="Enter your BEST email">
+      <p id="w-mail" class="form-warnings">Please enter your email</p><br>
       
       <label for="phone">Phone:</label>
-      <input type="tel" id="phone" name="phone" placeholder="Enter your contact number"><br>
+      <input type="tel" id="phone" name="phone" placeholder="Enter your contact number">
+      <p id="w-number" class="form-warnings">Please enter your contact</p><br>
       
-      <input type="submit" value="JOIN ME NOW!">
+      <input id="submit-btn" type="submit" value="JOIN ME NOW!">
     </form>
     
   </div>

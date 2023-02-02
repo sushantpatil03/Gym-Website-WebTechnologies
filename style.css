@@ -206,6 +206,7 @@ form {
   margin-top: 6.5rem;
   /* background-color: #f7f7f7; */
   background-color: transparent;
+  
   border: 1px solid #ccc;
   border-radius: 2rem;
   color: #ffffff;
@@ -239,4 +240,8 @@ input[type="submit"] {
   border: none;
   cursor: pointer;
   font-family: 'Open Sans';
+}
+
+.form-warnings{
+  margin-top: -20px;
 }
