@@ -23,6 +23,8 @@
           var email = $("#email").val()
           var number = $("#phone").val()
 
+          console.log("name-"+name+" email-"+email+" number-"+number);
+
           var error = false
           if(name.length == 0 || !name){
             $("#w-name").show();
@@ -37,6 +39,10 @@
             error = true;
           }
 
+          function validateEmail($email) {
+            var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+            return emailReg.test( $email );
+          }
           if(!validateEmail(email)) { 
               $("#w-mail").val("Please enter a valid email!");
               $("#w-mail").show();
@@ -105,14 +111,14 @@
       <p id="w-name" class="form-warnings">Please enter your name</p><br>
       
       <label for="email">Email:</label>
-      <input type="email" id="email" name="email" placeholder="Enter your BEST email">
+      <input type="text" id="email" name="email" placeholder="Enter your BEST email">
       <p id="w-mail" class="form-warnings">Please enter your email</p><br>
       
       <label for="phone">Phone:</label>
       <input type="tel" id="phone" name="phone" placeholder="Enter your contact number">
       <p id="w-number" class="form-warnings">Please enter your contact</p><br>
       
-      <input id="submit-btn" type="submit" value="JOIN ME NOW!">
+      <div class="sum-btn"><input id="submit-btn" type="submit" value="JOIN ME NOW!"></div>
     </form>
     
   </div>
